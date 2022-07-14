@@ -19,6 +19,10 @@ body {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 /* header */
 .container-top {
     width: 100%;
@@ -65,7 +69,7 @@ img {
     
 }
 
-p {
+.card > p {
     background-color: rgba(106, 117, 126, 0.3);
     position: absolute;
     bottom: 20px;
@@ -79,6 +83,7 @@ p {
     width: 100%;
     height: 10vh;
     background-color: #222222;
+    justify-content: space-between;
     
 }
 
@@ -88,4 +93,47 @@ button {
     margin: 4px;
     border-radius: 10px;
     color: white;
+}
+
+
+.column > * {
+    color: white;
+    align-items: center;
+}
+
+
+.center > .fa-solid {
+    font-size: 25px;
+
+}
+
+.text-foot {
+    font-size: 10px;
+    padding: 5px ;
+}
+
+.symbol {
+    color: white;
+    padding: 30px 5px;
+}
+
+.center {
+   justify-content: center; 
+   align-items: center;
+   padding: 5px;
+   
+}
+
+.green {
+    color: green;
+}
+
+.red-foot {
+    color: red;
+    background-color: #4a4a4a;
+    padding: 27px;
+}
+
+.fa-user-plus {
+    padding-left: 10px;
 }
