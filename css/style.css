@@ -3,8 +3,89 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 2px solid yellow; */
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     font-family: sans-serif;
+}
+
+/* flex-box */
+.flex {
+    display: flex;
+}
+
+/* header */
+.container-top {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    justify-content: flex-end;
+}
+
+/* main */
+
+main {
+    background-color: black;
+}
+
+section {
+    margin: 0px 100px;
+}
+
+.container-main {
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    /* padding: 0px 85px; */
+    justify-content: center;
+   
+}
+
+.container-main ::-webkit-scrollbar {
+    display: none;
+}
+
+.container-main > .card {
+    width: calc(100% / 7 - 4px );
+    position: relative;
+    margin: 4px 2px;
+     
+}
+
+
+img {
+    width: 100%;
+    /* height: 18vh; */
+    
+}
+
+p {
+    background-color: rgba(106, 117, 126, 0.3);
+    position: absolute;
+    bottom: 20px;
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+}
+
+/* footer */
+.container-foot {
+    width: 100%;
+    height: 10vh;
+    background-color: #222222;
+    
+}
+
+button {
+    background-color: grey;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 10px;
+    color: white;
 }
